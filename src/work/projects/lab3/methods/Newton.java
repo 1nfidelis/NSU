@@ -1,12 +1,12 @@
-package lab3.methods;
+package work.projects.lab3.methods;
 
-import lab3.equations.EquationInterface;
-import lab3.main.Main;
+import work.projects.lab3.equations.Equation;
+import work.projects.lab3.main.Main;
 
 public class Newton implements MethodInterface{
-    private EquationInterface equation;
+    private Equation equation;
 
-    public Newton (EquationInterface equation) {
+    public Newton (Equation equation) {
         this.equation = equation;
     }
 

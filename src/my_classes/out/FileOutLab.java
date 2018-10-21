@@ -5,15 +5,11 @@ import work.projects.lab3.main.Main;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public abstract class FileOut implements Out {
-    protected FileWriter fileOut;
+public class FileOutLab extends FileOut {
 
-    @Override
-    public void print (Object data) {
+    public FileOutLab(String fileName) {
         try {
-            fileOut.write((String) data + '\n');
-            fileOut.flush();
-
+            fileOut = new FileWriter(fileName);
         } catch (IOException e) {
             Main.out = new ConsoleOut();
             Main.out.print("Ошибка вывода в файл");

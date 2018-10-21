@@ -1,7 +1,7 @@
-package lab3.methods;
+package work.projects.lab3.methods;
 
-import lab3.equations.EquationInterface;
-import lab3.main.Main;
+import work.projects.lab3.equations.Equation;
+import work.projects.lab3.main.Main;
 
 public class Methods {
 
@@ -14,15 +14,22 @@ public class Methods {
         return counter;
     }
 
-    public static void printInfo(EquationInterface equation) {
+    public static void printInfo(Equation equation) {
         Main.out.print("Биссекции:");
         equation.bisection();
+
         Main.out.print("Хорды:");
         equation.hords();
+
+        Main.out.print("Секущие: ");
+        equation.secants();
+
         Main.out.print("Параболы: ");
         equation.paraboles();
+
         Main.out.print("Ньютон:");
         equation.newton();
+
 
         Main.out.print(" ");
     }
