@@ -1,6 +1,6 @@
 package my_classes.out;
 
-import work.projects.lab3.main.Main;
+import lab3.main.Main;
 
 import java.io.FileWriter;
 import java.io.IOException;

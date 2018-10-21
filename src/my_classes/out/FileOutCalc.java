@@ -1,6 +1,6 @@
 package my_classes.out;
 
-import work.projects.stackCalc.StackCalc;
+import stackCalc.StackCalc;
 
 import java.io.FileWriter;
 import java.io.IOException;
