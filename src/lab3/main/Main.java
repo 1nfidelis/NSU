@@ -15,6 +15,7 @@ public class Main {
         Equation second = new SecondEquation();
         Equation third = new ThirdEquation();
 
+
         first.printAll();
         second.printAll();
         third.printAll();

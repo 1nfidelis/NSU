@@ -1,7 +1,7 @@
 package stackCalc;
 
 
-import my_classes.out.FileOutCalc;
+import my_classes.out.ConsoleOut;
 import my_classes.out.Out;
 import stackCalc.commands.CommandInterface;
 import stackCalc.factory.CommandFactory;
@@ -18,7 +18,7 @@ import java.util.Stack;
 public class StackCalc {
     public static Stack<Double> data = new Stack<>();
     public static Reader read = new ConsoleReader();
-    public static Out out = new FileOutCalc("/Users/infidelis/IdeaProjects/NSUProg/src/stackCalc/txt/outFile.txt");
+    public static Out out = new ConsoleOut();
 
 
     public static void main(String[] args) {
@@ -34,11 +34,15 @@ public class StackCalc {
             String CommandName;
             while (true) {
                 try {
+
                     CommandName = read.readString();
                     CommandInterface command = CommandFactory.makeCommand(CommandName);
                     command.doCommand();
+
                 } catch (EmptyStackException e) {
                     StackCalc.out.print("Извините, недостаточно элементов в стеке");
+                } catch ( NumberFormatException e) {
+                    StackCalc.out.print("Извините, такого DEFINE не существует");
                 }
             }
         } catch (NoSuchElementException e) {

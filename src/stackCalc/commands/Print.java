@@ -1,11 +1,18 @@
 package stackCalc.commands;
 
 import stackCalc.StackCalc;
+import stackCalc.commands.history.History;
 
 public class Print implements CommandInterface {
     @Override
+    public String commandName() {
+        return "print";
+    }
+
+    @Override
     public void doCommand() {
-        String tmp = StackCalc.data.get(StackCalc.data.size() - 1).toString();
-        StackCalc.out.print(tmp);
+        String tmpString = StackCalc.data.peek().toString();
+        StackCalc.out.print(tmpString);
+        History.add(this);
     }
 }

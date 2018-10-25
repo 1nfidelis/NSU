@@ -8,7 +8,7 @@ public class SecondEquation extends Equation {
         borders[1] = 0.3;
         borders[2] = 0.48;
         borders[3] = 1;
-        str = "Второе уравнение, три кореня";
+        str = "Второе уравнение, три корня";
     }
 
     @Override

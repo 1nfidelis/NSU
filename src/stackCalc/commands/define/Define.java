@@ -3,12 +3,13 @@ package stackCalc.commands.define;
 
 import stackCalc.StackCalc;
 import stackCalc.commands.CommandInterface;
+import stackCalc.commands.history.History;
 
 import java.util.ArrayList;
 
 public class Define implements CommandInterface {
 
-    public static ArrayList<DefineElement> array = new ArrayList<>();
+    private static ArrayList<DefineElement> array = new ArrayList<>();
 
     @Override
     public void doCommand() {
@@ -16,6 +17,12 @@ public class Define implements CommandInterface {
         double tmpDouble = StackCalc.read.readDouble();
 
         createNew(new DefineElement(tmpStr, tmpDouble));
+        History.add(this, tmpStr, tmpDouble);
+    }
+
+    @Override
+    public String commandName() {
+        return "define";
     }
 
     private void createNew(DefineElement element) {

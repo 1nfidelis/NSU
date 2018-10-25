@@ -15,11 +15,12 @@ public class Methods {
     }
 
     public static void printInfo(Equation equation) {
+        roots(null, null);
         Main.out.print("Биссекции:");
         equation.bisection();
 
-        Main.out.print("Хорды:");
-        equation.hords();
+        //Main.out.print("Хорды:");
+        //equation.hords();
 
         Main.out.print("Секущие: ");
         equation.secants();
