@@ -26,4 +26,9 @@ public class FileRead implements Reader {
     public void comment() {
         read.nextLine();
     }
+
+    @Override
+    public void close() {
+        read.close();
+    }
 }

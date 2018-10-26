@@ -12,12 +12,6 @@ public class History implements CommandInterface {
         history.add(new HistoryData(command, a));
     }
 
-/*
-    public static void add(CommandInterface command, double a, double b) {
-        history.add(new HistoryData(command, a, b));
-    }
-*/
-
     public static void add(CommandInterface command) {
         history.add(new HistoryData(command));
     }

@@ -1,6 +1,8 @@
 package stackCalc.read;
 
-public interface Reader {
+import java.io.Closeable;
+
+public interface Reader extends Closeable {
     String readString();
 
     double readDouble();

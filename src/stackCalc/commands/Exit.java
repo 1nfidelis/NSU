@@ -1,14 +1,14 @@
 package stackCalc.commands;
 
 import stackCalc.commands.history.History;
+import stackCalc.exceptions.ExitException;
 
-import java.util.NoSuchElementException;
 
 public class Exit implements CommandInterface {
     @Override
-    public void doCommand() {
+    public void doCommand() throws ExitException {
         History.add(this);
-        throw new NoSuchElementException();
+        throw new ExitException();
     }
 
     @Override

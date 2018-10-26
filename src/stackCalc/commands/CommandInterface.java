@@ -1,11 +1,9 @@
 package stackCalc.commands;
 
-import java.util.EmptyStackException;
+import java.io.IOException;
 
 public interface CommandInterface {
-    void doCommand() throws EmptyStackException;
-
-    String toString();
+    void doCommand() throws IOException;
 
     String commandName();
 }

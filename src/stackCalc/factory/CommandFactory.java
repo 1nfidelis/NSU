@@ -14,8 +14,7 @@ public class CommandFactory {
 
     public static CommandInterface makeCommand(String str) {
         while (true) {
-            str = str.toLowerCase();
-            switch (str) {
+            switch (str.toLowerCase()) {
                 case "divide":
                     return new Divide();
                 case "multiply":
@@ -52,8 +51,8 @@ public class CommandFactory {
                         return new Comment();
                     }
                     StackCalc.out.print("Повторите попытку ввода: ");
+                    str = StackCalc.read.readString();
                 }
-                str = StackCalc.read.readString();
             }
 
         }
