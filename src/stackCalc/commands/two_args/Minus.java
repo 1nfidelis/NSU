@@ -9,7 +9,7 @@ public class Minus extends TwoArgumentsPattern {
 
     @Override
     protected double solve(double a, double b) {
-        return b-a;
+        return b - a;
     }
 
 }

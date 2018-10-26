@@ -6,5 +6,6 @@ public interface CommandInterface {
     void doCommand() throws EmptyStackException;
 
     String toString();
+
     String commandName();
 }

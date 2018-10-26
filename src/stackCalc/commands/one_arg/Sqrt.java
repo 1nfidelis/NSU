@@ -1,7 +1,6 @@
 package stackCalc.commands.one_arg;
 
 
-
 public class Sqrt extends OneArgumentPattern {
 
     @Override

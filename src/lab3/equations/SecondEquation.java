@@ -13,13 +13,13 @@ public class SecondEquation extends Equation {
 
     @Override
     public double solve(double x) {
-        double equation = Math.pow(x, 3) - 1.44*Math.pow(x,2) + 0.6203*x - 0.07866;
+        double equation = Math.pow(x, 3) - 1.44 * Math.pow(x, 2) + 0.6203 * x - 0.07866;
         return equation;
     }
 
     @Override
     public double solveDiff(double x) {
-        double equation = 3*Math.pow(x,2) + 0.6203 - 2.88*x;
+        double equation = 3 * Math.pow(x, 2) + 0.6203 - 2.88 * x;
         return equation;
     }
 

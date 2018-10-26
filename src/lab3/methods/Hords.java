@@ -6,7 +6,7 @@ import lab3.main.Main;
 public class Hords implements MethodInterface {
     private Equation equation;
 
-    public Hords (Equation equation) {
+    public Hords(Equation equation) {
         this.equation = equation;
     }
 
@@ -16,7 +16,7 @@ public class Hords implements MethodInterface {
         int counter = 0;
 
         while (Math.abs(equation.solve(a) - equation.solve(b)) > 1.0E-12) {
-            tmp = b - (equation.solve(b)*(a - b))/(equation.solve(a) - equation.solve(b));
+            tmp = b - (equation.solve(b) * (a - b)) / (equation.solve(a) - equation.solve(b));
             b = a;
             a = tmp;
             counter++;

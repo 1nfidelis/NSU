@@ -20,7 +20,7 @@ public class Main {
         second.printAll();
         third.printAll();
 
-        }
+    }
 
 
 }

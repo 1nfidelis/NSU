@@ -3,10 +3,10 @@ package lab3.methods;
 import lab3.equations.Equation;
 import lab3.main.Main;
 
-public class Newton implements MethodInterface{
+public class Newton implements MethodInterface {
     private Equation equation;
 
-    public Newton (Equation equation) {
+    public Newton(Equation equation) {
         this.equation = equation;
     }
 
@@ -18,10 +18,10 @@ public class Newton implements MethodInterface{
 
         while (Math.abs(equation.solve(b)) > 1.0E-12) {
             a = b;
-            b = a - equation.solve(a)/equation.solveDiff(a);
+            b = a - equation.solve(a) / equation.solveDiff(a);
 
             while (b >= to | b <= from) {
-                b = (a+b)*0.5;
+                b = (a + b) * 0.5;
             }
 
             counter++;

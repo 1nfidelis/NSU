@@ -12,7 +12,7 @@ public class ThirdEquation extends Equation {
 
     @Override
     public double solve(double x) {
-        double equation = Math.exp(x) - 1.59*x - 0.945;
+        double equation = Math.exp(x) - 1.59 * x - 0.945;
         return equation;
     }
 

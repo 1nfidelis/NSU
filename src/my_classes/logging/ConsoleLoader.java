@@ -3,17 +3,17 @@ package my_classes.logging;
 public class ConsoleLoader implements ILog {
 
     @Override
-    public void error (String message) {
+    public void error(String message) {
         write(message);
     }
 
     @Override
-    public void warn (String message) {
+    public void warn(String message) {
         write(message);
     }
 
     @Override
-    public void trace (String message) {
+    public void trace(String message) {
         write(message);
     }
 
@@ -32,7 +32,7 @@ public class ConsoleLoader implements ILog {
         write(message);
     }
 
-    private void write (String message) {
+    private void write(String message) {
         System.out.println(message + "\n");
     }
 }

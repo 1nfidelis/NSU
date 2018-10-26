@@ -5,11 +5,11 @@ import lab3.main.Main;
 
 public class Methods {
 
-    public static int roots (MethodInterface method, double[] borders) {
+    public static int roots(MethodInterface method, double[] borders) {
         int counter = 0;
 
-        for (int i = 0; i < borders.length -1; i++) {
-            counter += method.solve(borders[i], borders[i+1]);
+        for (int i = 0; i < borders.length - 1; i++) {
+            counter += method.solve(borders[i], borders[i + 1]);
         }
         return counter;
     }

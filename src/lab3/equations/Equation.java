@@ -7,28 +7,28 @@ public abstract class Equation {
     protected double[] borders;
     protected String str;
 
-    public abstract double solve (double x);
+    public abstract double solve(double x);
 
-    public abstract double solveDiff (double x);
+    public abstract double solveDiff(double x);
 
     public void bisection() {
-        ultimateOut( new Bisection(this) );
+        ultimateOut(new Bisection(this));
     }
 
     public void hords() {
-        ultimateOut( new Hords(this) );
+        ultimateOut(new Hords(this));
     }
 
     public void newton() {
-        ultimateOut( new Newton(this) );
+        ultimateOut(new Newton(this));
     }
 
     public void paraboles() {
-        ultimateOut( new Paraboles(this) );
+        ultimateOut(new Paraboles(this));
     }
 
     public void secants() {
-        ultimateOut( new Secants(this) );
+        ultimateOut(new Secants(this));
     }
 
     private void ultimateOut(MethodInterface method) {
@@ -38,6 +38,6 @@ public abstract class Equation {
 
     public void printAll() {
         Main.out.print(str);
-        Methods.printInfo( this );
+        Methods.printInfo(this);
     }
 }

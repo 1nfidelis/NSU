@@ -9,7 +9,7 @@ public abstract class FileOut implements Out {
     protected FileWriter fileOut;
 
     @Override
-    public void print (Object data) {
+    public void print(Object data) {
         try {
             fileOut.write((String) data + '\n');
             fileOut.flush();

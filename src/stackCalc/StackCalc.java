@@ -41,7 +41,7 @@ public class StackCalc {
 
                 } catch (EmptyStackException e) {
                     StackCalc.out.print("Извините, недостаточно элементов в стеке");
-                } catch ( NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     StackCalc.out.print("Извините, такого DEFINE не существует");
                 }
             }

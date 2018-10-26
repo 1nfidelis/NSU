@@ -8,7 +8,7 @@ public class Square extends OneArgumentPattern {
 
     @Override
     protected double solve(double a) {
-        return a*a;
+        return a * a;
     }
 
 }

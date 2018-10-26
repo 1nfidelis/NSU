@@ -17,10 +17,10 @@ public abstract class OneArgumentPattern implements CommandInterface {
         errorCheck();
     }
 
-    private void errorCheck () {
+    private void errorCheck() {
         double a = 0;
 
-        if ( StackCalc.data.empty() ) {
+        if (StackCalc.data.empty()) {
             throw new EmptyStackException();
         }
 
@@ -28,7 +28,7 @@ public abstract class OneArgumentPattern implements CommandInterface {
             a = StackCalc.data.pop();
             Double tmp = Double.valueOf(solve(a));
             StackCalc.data.push(tmp);
-            History.add(this, a);
+            History.add(this);
         } catch (EmptyStackException e) {
             StackCalc.data.push(Double.valueOf(a));
             throw new EmptyStackException();

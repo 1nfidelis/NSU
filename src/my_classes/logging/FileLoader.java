@@ -19,7 +19,7 @@ public class FileLoader implements ILog {
         }
     }
 
-    private String getTime () {
+    private String getTime() {
         DateFormat df = DateFormat.getDateInstance(DateFormat.LONG, Locale.FRANCE);
         return df.toString();
     }

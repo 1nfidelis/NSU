@@ -12,7 +12,6 @@ public class FileRead implements Reader {
     }
 
 
-
     @Override
     public String readString() {
         return read.next();

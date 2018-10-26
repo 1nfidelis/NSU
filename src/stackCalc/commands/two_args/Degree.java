@@ -8,6 +8,6 @@ public class Degree extends TwoArgumentsPattern {
 
     @Override
     protected double solve(double a, double b) {
-        return Math.pow(a,b);
+        return Math.pow(a, b);
     }
 }

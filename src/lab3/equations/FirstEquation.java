@@ -11,14 +11,14 @@ public class FirstEquation extends Equation {
     }
 
     @Override
-    public  double solve(double x) {
+    public double solve(double x) {
         double equation = Math.cos(x) - x;
         return equation;
     }
 
     @Override
     public double solveDiff(double x) {
-        double equation = - Math.sin(x) - 1;
+        double equation = -Math.sin(x) - 1;
         return equation;
     }
 }

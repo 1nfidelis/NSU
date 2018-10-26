@@ -16,24 +16,41 @@ public class CommandFactory {
         while (true) {
             str = str.toLowerCase();
             switch (str) {
-                case "divide": return new Divide();
-                case "multiply": return new Multiply();
-                case "minus": return new Minus();
-                case "sqrt": return new Sqrt();
-                case "plus": return new Plus();
-                case "cos": return new Cos();
-                case "sin": return new Sin();
-                case "degree": return new Degree();
-                case "square": return new Square();
-                case "define": return new Define();
-                case "history": return new History();
-                case "#": return new Comment();
-                case "print": return new Print();
-                case "push": return new Push();
-                case "exit": return new Exit();
+                case "divide":
+                    return new Divide();
+                case "multiply":
+                    return new Multiply();
+                case "minus":
+                    return new Minus();
+                case "sqrt":
+                    return new Sqrt();
+                case "plus":
+                    return new Plus();
+                case "cos":
+                    return new Cos();
+                case "sin":
+                    return new Sin();
+                case "degree":
+                    return new Degree();
+                case "square":
+                    return new Square();
+                case "define":
+                    return new Define();
+                case "history":
+                    return new History();
+                case "#":
+                    return new Comment();
+                case "print":
+                    return new Print();
+                case "push":
+                    return new Push();
+                case "exit":
+                    return new Exit();
 
                 default: {
-                    if (str.charAt(0) == '#') { return new Comment(); }
+                    if (str.charAt(0) == '#') {
+                        return new Comment();
+                    }
                     StackCalc.out.print("Повторите попытку ввода: ");
                 }
                 str = StackCalc.read.readString();
