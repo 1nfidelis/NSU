@@ -15,7 +15,6 @@ public class Methods {
     }
 
     public static void printInfo(Equation equation) {
-        roots(null, null);
         Main.out.print("Биссекции:");
         equation.bisection();
 
